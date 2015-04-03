@@ -40,7 +40,7 @@ var preload = {
         game.load.audio('hit_ground_sound', 'assets/ouch.wav'); // Sound of hit the ground
         game.load.image('ready_text','assets/get-ready.png'); // Get ready image
         game.load.image('play_tip','assets/instructions.png'); // Play info image
-        game.load.image('game_over','assets/gameOver.png'); // Gameover image
+        game.load.image('game_over','assets/gameover.png'); // Gameover image
         game.load.image('score_board','assets/scoreboard.png'); // Score board image
     },
 
