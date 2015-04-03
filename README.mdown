@@ -1,0 +1,20 @@
+## 游戏作者
+
+- kailee
+
+## 游戏演示网址
+
+- [Flappy Bird](http://likenow.github.io/gp)
+
+## 游戏说明
+
+对Flappy Bird游戏的重新实现
+
+### 修改说明
+
+- 使用HTML5+Phaser重新实现
+
+## 其他平台
+
+- 通过 NWJS 打包为桌面应用（ps.缺点是文件太大了）
+- 通过 Phonegap 实现移动端体验
