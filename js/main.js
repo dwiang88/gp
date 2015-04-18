@@ -106,7 +106,8 @@ var play = {
 		if(!this.hasStarted) return; // The game is not start
 		game.physics.arcade.collide(this.bird,this.ground, this.hitGround, null, this); // Hit the ground
 		game.physics.arcade.overlap(this.bird, this.pipeGroup, this.hitPipe, null, this); // Hit the pipes
-		if(this.bird.angle < 90) this.bird.angle += 2.5; // Upside down when drop 
+		if(this.bird.angle < 90) this.bird.angle += 2.5; // Upside down when drop
+		if (this.bird.y < 0) this.gameOver();
 		this.pipeGroup.forEachExists(this.checkScore,this); // Score detect and update
 	},
 
@@ -154,7 +155,6 @@ var play = {
 		this.soundHitGround.play();
 		this.gameOver(true);
 	},
-
 	gameOver: function(show_text){
 		this.gameIsOver = true;
 		this.stopGame();
